@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white:hsl(0, 0%, 100%);
+    --offwhite: hsl(0, 0%, 94%);
+    --lightrey: hsl(0, 0%, 86%);
+    --smokeygrey: hsl(0, 1%, 44%);
+    --offblack: hsl(0, 0%, 8%);
+    --purple: hsl(259, 100%, 65%);
+    --lightred: hsl(0, 100%, 67%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+    background-color: var(--offwhite);
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+    width: 610px;
+    height: 550px;
+    padding: 5px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .topdesign {
+        display: flex;
+        padding-left: 10px;
+        width: 500px;
+        margin: 30px;
+        height: 129px;
+        border-bottom: 2px solid var(--lightrey);
+        div {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            width: 30%;
+            input {
+                width: 90%;
+                height: 48px; 
+                border-radius: 5px;
+                border: 1px solid var(--lightrey);
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 10px 14px;
+                font-size: 18px;
+                font-weight: 800;
+                outline: none;
+                caret-color: var(--purple);
+                color: var(--offblack); 
+           }
+           input:focus {
+            border-color: var(--purple);
+            transition: .2s;
+           }
+           label {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--smokeygrey);
+            letter-spacing: 3px;
+           }
+        }
+        .topDesignBtn {
+            position: relative;
+            background-color: var(--purple);
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            top: 94px;
+            left: 8px;
+            outline: none;
+            transition: .2s;
+        }
+        .topDesignBtn:hover {
+            background-color: var(--offblack);
+        }
+        .errMsg {
+            color: var(--lightred);
+            padding-left: 10px;
+        }   
+    }
+    .bottomdesign {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 10px;
+        font-weight: 900;
+        font-size: 60px;
+        color: var(--offblack);
+        margin-bottom: 15px;
+        span {
+            font-size: 60px;
+            color: var(--purple);
+            padding-right: 5px;
+        }
+    }
+}

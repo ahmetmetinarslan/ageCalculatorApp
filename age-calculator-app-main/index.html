@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="topdesign">
+        <div class="day">
+          <label for="dayInput">DAY</label>
+          <input type="text" id="dayInput" placeholder="DD" />
+          <span class="errMsg" id="dayErrMsg"></span>
+        </div>
+        <div class="month">
+          <label for="monthInput">MONTH</label>
+          <input type="text" id="monthInput" placeholder="MM" />
+          <span class="errMsg" id="monthErrMsg"></span>
+        </div>
+        <div class="year">
+          <label for="yearInput">YEAR</label>
+          <input type="text" id="yearInput" placeholder="YYYY" />
+          <span class="errMsg" id="yearErrMsg"></span>
+        </div>
+        <button click="tıkla()" type="submit" class="topDesignBtn" id="btn">
+          <img src="/assets/images/icon-arrow.svg" alt="" />
+        </button>
+      </section>
+      <section class="bottomdesign">
+        <div class="bottomyear"><span id="bottomYear">- -</span>years</div>
+        <div class="bottommonth"><span id="bottomMonth">- -</span>months</div>
+        <div class="bottomday"><span id="bottomDay">- -</span>days</div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
